@@ -11,6 +11,7 @@ DECLARE
 
     --2.Variable RECORD
     v_datos_libro LibroResumenRec;
+
 BEGIN
     --3.Generamos la consulta y guardamos los datos en RECORD
     SELECT l.id_libro, l.titulo, l.cantidad_disponible, COUNT(p.id_prestamos)
